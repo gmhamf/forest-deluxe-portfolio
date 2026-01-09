@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Sadiq | Golden Wind Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Montserrat:wght@200;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <canvas id="forestCanvas"></canvas>
+    <nav class="fixed-ui">
+        <div class="logo">M. SADIQ</div>
+        <div class="scroll-indicator">
+            <span>SCROLL</span>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Navigation Dots -->
+    <div class="nav-dots" role="navigation" aria-label="Slide Navigation">
+        <button class="dot active" onclick="scrollToSlide(0)" aria-label="Go to Hero"></button>
+        <button class="dot" onclick="scrollToSlide(1)" aria-label="Go to About"></button>
+        <button class="dot" onclick="scrollToSlide(2)" aria-label="Go to Skills"></button>
+        <button class="dot" onclick="scrollToSlide(3)" aria-label="Go to Projects"></button>
+        <button class="dot" onclick="scrollToSlide(4)" aria-label="Go to Contact"></button>
+    </div>
+
+    <main id="tunnel-container">
+
+        <!-- SLIDE 1: HERO -->
+        <section class="slide" id="slide-0" aria-label="Hero Section">
+            <div class="content-wrapper">
+                <h1 class="main-title">Mohammed Sadiq<br><span class="accent-text">Zuhair</span></h1>
+                <h2 class="role-tag">Computer Engineer | Full-Stack Web Developer (Laravel)</h2>
+                <div class="separator-line"></div>
+                <p class="tagline">"Crafting Scalable Digital Systems in the Heart of Code."</p>
+            </div>
+        </section>
+
+        <!-- SLIDE 2: ABOUT -->
+        <section class="slide" id="slide-1" aria-label="About Section">
+            <div class="content-wrapper glass-panel">
+                <h2 class="section-title">About & Highlights</h2>
+                <p class="summary">
+                    I am a Computer Engineer specializing in Laravel, with deep expertise in building scalable,
+                    user-focused web systems. Beyond code, I have experience leading teams and instructing in IoT.
+                </p>
+                <div class="grid-3">
+                    <div class="card-mini">
+                        <h3>MVC</h3>
+                        <small>Strong Architecture Understanding</small>
+                    </div>
+                    <div class="card-mini">
+                        <h3>Lifecycle</h3>
+                        <small>Full Project Management</small>
+                    </div>
+                    <div class="card-mini">
+                        <h3>IoT</h3>
+                        <small>Skilled Instructor & Hardware Logic</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: ARSENAL -->
+        <section class="slide" id="slide-2" aria-label="Skills Section">
+            <div class="content-wrapper glass-panel">
+                <h2 class="section-title">Technical Arsenal</h2>
+                <div class="skills-layout">
+                    <div class="skill-col">
+                        <h4>Backend</h4>
+                        <ul>
+                            <li>PHP (Laravel)</li>
+                            <li>MySQL</li>
+                            <li>REST API Integration</li>
+                            <li>MVC Patterns</li>
+                        </ul>
+                    </div>
+                    <div class="skill-col">
+                        <h4>Frontend</h4>
+                        <ul>
+                            <li>HTML5 / CSS3</li>
+                            <li>Bootstrap 5 / Tailwind</li>
+                            <li>JavaScript (ES6+)</li>
+                        </ul>
+                    </div>
+                    <div class="skill-col">
+                        <h4>Systems & Tools</h4>
+                        <ul>
+                            <li>C++ / Python / Arduino</li>
+                            <li>Git / GitHub / VS Code</li>
+                            <li>Telegram Bot API</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: PROJECTS -->
+        <section class="slide" id="slide-3" aria-label="Projects Section">
+            <div class="content-wrapper glass-panel">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-vertical">
+                    <div class="project-item">
+                        <span class="p-year">WEB</span>
+                        <div class="p-detail">
+                            <h3>Gym Management System</h3>
+                            <small>Laravel • MySQL • Bootstrap • Multi-role Dashboards</small>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <span class="p-year">API</span>
+                        <div class="p-detail">
+                            <h3>Currency Converter</h3>
+                            <small>Laravel • Real-time External API Integration</small>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <span class="p-year">AI</span>
+                        <div class="p-detail">
+                            <h3>Face Recognition System</h3>
+                            <small>Python • OpenCV • Game Controls via Face Tracking</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: CONTACT -->
+        <section class="slide" id="slide-4" aria-label="Contact Section">
+            <div class="content-wrapper">
+                <h2 class="section-title">Initiate Connection</h2>
+                <a href="mailto:gmhamf@gmail.com" class="hero-email">gmhamf@gmail.com</a>
+                <div class="contact-details">
+                    <span>+964 780 087 3450</span>
+                    <span class="dot">•</span>
+                    <a href="https://www.linkedin.com/in/mohammed-sadeq-zuhair-sadeq-1aa6112b7/?locale=ar_AE"
+                        target="_blank">LinkedIn</a>
+                    <span class="dot">•</span>
+                    <a href="https://github.com/gmhamf" target="_blank">GitHub</a>
+                </div>
+                <div class="certifications">
+                    <p>Python Core (SoloLearn) • C++ Fundamentals</p>
+                    <p>© 2026 Mohammed Sadiq. Forest Deluxe.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <img id="imgBgNormal" src="normal (1).png" alt="">
+    <img id="imgBgGold" src="gold (1).png" alt="">
+    <img id="imgSideNormal" src="branch.png" alt="">
+    <img id="imgSideGold" src="branch_with_owl.png" alt="">
+
+    <script src="script.js"></script>
+</body>
+
+</html>
