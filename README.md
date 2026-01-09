@@ -1,41 +1,43 @@
 Forest Deluxe - Immersive Portfolio Website
 
-An Awwwards-style immersive personal portfolio website featuring a "Tunnel Scroll" interaction, dynamic WebGL-like canvas effects, and a high-end "Forest Noir" aesthetic. Built with optimized Vanilla JavaScript, HTML5, and CSS3.
+Description:
+Forest Deluxe is a high-end, interactive personal portfolio website built with HTML5, CSS3, and Vanilla JavaScript. Featuring a "Tunnel Scroll" interaction, dynamic canvas effects, and a visually rich "Forest Noir" aesthetic, this project combines performance, readability, and immersive visual storytelling.
 
 Key Features
 
-Tunnel Scroll Interaction: Unique Z-axis navigation where sections scale and fade to simulate moving through a 3D tunnel.
+Tunnel Scroll Interaction: Smooth Z-axis scale and fade animations simulate moving through a 3D tunnel.
 
-Dynamic Hero Fade-Out: Main character and background elements (Forest & Branch) are visible only in the Hero section and fade out smoothly as the user scrolls, leaving a clean visual space for content readability.
+Dynamic Hero Fade-Out: Hero section elements (background and character) fade out as the user scrolls, leaving inner slides visually clean.
 
-Interactive Gold Reveal: A liquid mask effect follows the mouse cursor, revealing a gold version of the underlying assets.
+Interactive Gold Reveal: Mouse-controlled liquid mask reveals gold versions of background and foreground assets.
 
-Intelligent Text Contrast: Solves the "white text on gold background" issue using CSS mix-blend-mode: difference, ensuring text is always readable.
+Intelligent Text Contrast: Solves the "white text on gold background" problem using mix-blend-mode: difference.
 
-Golden Wind Particles: Organic particle system simulating wind flow, reacting to scroll speed and direction.
+Golden Wind Particles: Organic particle system reacts to scroll speed and direction for depth and motion.
 
-Fully Responsive: Optimized layouts for Desktop, Tablet, and Mobile devices with touch-friendly swipe navigation.
+Fully Responsive: Desktop, tablet, and mobile optimized with touch-friendly swipe navigation.
 
-Performance Focused: Uses offscreen canvas buffering and requestAnimationFrame to maintain smooth 60fps performance on most devices.
+Performance Optimized: Offscreen canvas buffering and requestAnimationFrame ensure smooth 60fps performance.
 
 Tech Stack
 
-Core: HTML5, CSS3 (Custom Properties, Flexbox/Grid), Vanilla JavaScript (ES6+).
+HTML5 & CSS3: Flexbox/Grid, Custom Properties
 
-Rendering: HTML5 Canvas API for background effects and image manipulation.
+JavaScript (ES6+): Vanilla JS, optimized for performance
 
-Fonts: Google Fonts (Cinzel for headers, Montserrat for body).
+Canvas API: Background animations and interactive effects
 
-No External Libraries: Pure, dependency-free code for maximum performance and control.
+Fonts: Google Fonts – Cinzel (headers), Montserrat (body)
+
+No External Libraries: Dependency-free for full control
 
 Project Structure
 /project-root
 │
 ├── index.html        # Main HTML structure and content
 ├── style.css         # Styling, animations, and responsive rules
-├── script.js         # Core logic: Canvas rendering, scroll physics, particle system
-│
-└── Assets            # Required image files (Not included in repo)
+├── script.js         # Core logic: canvas rendering, scroll physics, particle system
+└── Assets            # Required image files (not included)
     ├── normal (1).png
     ├── gold (1).png
     ├── branch.png
@@ -43,60 +45,57 @@ Project Structure
 
 Setup & Installation
 
-Clone the Repository:
+Clone the repository:
 
-git clone https://github.com/your-username/forest-deluxe-portfolio.git
+git clone https://github.com/gmhamf/forest-deluxe-portfolio.git
 
 
-Add Assets: Place your 4 image files into the root directory. Ensure they match these filenames exactly:
+Add Assets: Place the following images in the root directory:
 
-normal (1).png – Main dark background
+normal (1).png – Dark background
 
-gold (1).png – Gold version of background
+gold (1).png – Gold background
 
 branch.png – Foreground branch/character
 
 branch_with_owl.png – Gold version of foreground
 
-Run Locally: Simply open index.html in any modern web browser. No build step or server is required (though using a local server like Live Server is recommended to avoid CORS issues with canvas image manipulation).
+Run Locally: Open index.html in a modern browser. For best results, use a local server (e.g., Live Server) to avoid CORS issues.
 
 Controls & Interaction
 
-Scroll / Wheel: Move forward/backward through the tunnel sections.
+Scroll / Wheel: Navigate through tunnel sections
 
-Arrow Keys / PageUp & PageDown: Keyboard navigation support.
+Arrow Keys / PageUp & PageDown: Keyboard navigation
 
-Touch / Swipe: Vertical swipe to navigate on mobile devices.
+Touch / Swipe: Mobile-friendly swipe navigation
 
-Mouse Move: Controls the "Gold Reveal" flashlight effect.
+Mouse Move: Controls the Gold Reveal effect
 
-Navigation Dots: Click the side dots to jump directly to specific sections.
+Navigation Dots: Jump directly to any section
 
 Customization Guide
 
-Changing Colors:
-Open style.css and modify the :root variables:
+Colors: Edit :root in style.css:
 
 :root {
-    --bg-deep: #050505;       /* Background Color */
-    --accent-color: #d4af37;  /* Main Gold Accent */
-    --text-main: #ffffff;     /* Main Text Color */
+  --bg-deep: #050505;       /* Background Color */
+  --accent-color: #d4af37;  /* Gold Accent Color */
+  --text-main: #ffffff;     /* Main Text Color */
 }
 
 
-Adjusting Scroll Speed:
-Open script.js and tweak the CONFIG object:
+Scroll & Particle Settings: Edit CONFIG in script.js:
 
 const CONFIG = {
-    lerp: 0.08,             // Lower = smoother/slower inertia
-    mouseLerp: 0.1,         // Mouse follow delay
-    mobilePCount: 30,       // Particle count on mobile
-    desktopPCount: 80       // Particle count on desktop
+  lerp: 0.08,             // Smoothness / scroll inertia
+  mouseLerp: 0.1,         // Mouse follow delay
+  mobilePCount: 30,       // Particle count for mobile
+  desktopPCount: 80       // Particle count for desktop
 };
 
 
-Updating Content:
-Edit index.html. The content is structured into <section> tags with the class slide.
+Slides Content: Edit index.html <section class="slide">:
 
 Slide 0: Hero / Introduction
 
@@ -118,8 +117,12 @@ Safari (Latest)
 
 Edge (Latest)
 
-Note: Requires a device capable of WebGL/Canvas hardware acceleration for best performance.
+Hardware-accelerated WebGL/Canvas recommended for best performance.
 
 License
 
-This project is open-source and available under the MIT License.
+MIT License – Open source
+
+Hashtags / Keywords
+
+#WebDevelopment #PortfolioWebsite #HTML5 #CSS3 #JavaScript #Canvas #WebGL #UIUX #InteractiveDesign #Awwwards #FrontEnd #ResponsiveDesign #HighPerformance #CreativeCoding
